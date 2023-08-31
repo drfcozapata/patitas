@@ -1,0 +1,75 @@
+<!-- Header -->
+<header>
+  <!-- Contacto y Carrito -->
+  <div class="container header__contact">
+    <div class="header__contact-right">
+      <div class="header__contact-icons">
+        <a href="mailto:patitas@gmail.com"><img class="img1" src="../img/envelope.svg"> patitas@gmail.com</a>
+      </div>
+      <div class="header__contact-icons d-none d-md-block">
+        <a href="tel:+64 46543664"><img class="img2" src="../img/phone-call.svg"> +64 46543664</a>
+      </div>
+    </div>
+    <div class="header__contact-left">
+      <div class="header__contact-icons">
+        <a href="#">Carrito de compras <img class="img3" src="../img/carrito.png"></a>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- NavBar -->
+  <div class="container navbar__container">
+    <nav class="navbar navbar-expand-md navbar-dark d-flex align-items-center navbar__container-nav">
+      <!-- Logo de la empresa a la izquierda -->
+      <a class="navbar-brand mr-auto patitas-logo" href="../index.html">Patitas</a>
+
+      <!-- Botón para mostrar el menú hamburguesa en dispositivos móviles -->
+      <button class="navbar-toggler text-white" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Menú a la derecha -->
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link text-secondary" href="../index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-secondary" href="./tienda.html">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-secondary" href="./servicios.html">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-secondary" href="./envios.html">Envios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-secondary" href="./contacto.html">Contacto</a>
+          </li>
+        </ul>
+
+        <!-- Barra de Búsqueda con Icono de Lupa -->
+        <form class="form-inline my-2 mx-5 ">
+          <div class="input-group">
+            <input class="form-control rounded-sm" type="search" id="search-input" placeholder="Buscar..." />
+            <label class="form-label sr-only rounded-sm" for="search-input">Search</label>
+            <button class="btn text-dark rounded-sm" id="search-button" type="submit" aria-label="Buscar">
+              <img src="../img/search.svg" alt="">
+            </button>
+          </div>
+        </form>
+        <div class="row justify-content-center">
+          <div class="avatar rounded-circle d-flex align-items-center justify-content-center"
+            style="width: 38px; height: 38px; ">
+            <img
+              src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt="Avatar de Usuario" class="img-fluid rounded-circle"
+              style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>

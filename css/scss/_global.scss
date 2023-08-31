@@ -1,0 +1,66 @@
+@import './variables';
+@import './functions';
+@import './mixins';
+
+html {
+	box-sizing: border-box;
+	font-size: 62.5%;
+}
+*,
+*:before,
+:after {
+	box-sizing: inherit;
+}
+body {
+	font-family: $fuente-principal;
+	font-size: 1.6rem;
+	line-height: 1.5;
+	overflow-x: hidden;
+}
+.contenedor {
+	max-width: 120rem;
+	width: 90%;
+	margin: 0 auto;
+}
+h1,
+h2,
+h3 {
+	font-family: $fuente-principal;
+	font-weight: 700;
+}
+h1 {
+	font-size: em(48px);
+}
+h2 {
+	font-size: em(36px);
+}
+h3 {
+	font-size: em(20px);
+}
+p {
+	font-family: $fuente-secundaria;
+}
+a {
+	text-decoration: none !important;
+}
+img {
+	display: block;
+	height: auto;
+	width: 100%;
+}
+.carousel {
+	&-item {
+		.card {
+			height: 470px !important;
+
+			h3 {
+				font-weight: 600;
+			}
+		}
+		@include display-medium {
+			.card {
+				height: 400px !important;
+			}
+		}
+	}
+}

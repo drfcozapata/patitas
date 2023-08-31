@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="title" content="Patitas" />
+	<meta name="author" content="Adelys Orta" />
+	<meta name="subject" content="Tienda Online para Gatos" />
+	<meta name="description" content="Una tienda online de mascotas familiares, creada por amantes de los michis." />
+	<meta name="keywords" content="gatos, tienda, peluquería, spa, guardería" />
+	<meta name="generator" content="VScode" />
+	<meta name="language" content="Spanish" />
+	<meta name="revisit" content="1 day" />
+	<meta name="distribution" content="Global" />
+	<meta name="robots" content="All" />
+	<link rel="icon" type="image/png" href="../img/patitas.png">
+	<title>Patitas | Contacto</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/css/styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&family=Source+Sans+3:wght@400;500;600;700&display=swap"
+		rel="stylesheet">
+</head>
+
+<body>
+	<div id="header-container"></div>
+
+	<main>
+		<div class="contacto">
+			<div class="container text-left"></div>
+		</div>
+
+		<div class="container mb-5 p-10 contacto__content">
+			<h2 class="pt-32">Formulario de contacto</h2>
+			<div class="background-dark rounded-lg shadow-xl contact mt-5">
+				<form id="formulario" class="rounded-lg">
+					<div class="pair">
+						<label for="email" class="font-regular font-medium">Email:</label>
+						<input id="email" type="email" name="email" placeholder="Email Destino, ej: mkt@empresa.com"
+							class="border border-gray-300 px-3 py-2 rounded-lg" />
+					</div>
+
+					<div class="pair">
+						<label for="asunto" class="font-regular font-medium">Asunto:</label>
+						<input id="asunto" type="text" name="asunto" placeholder="Asunto Email"
+							class="border border-gray-300 px-3 py-2 rounded-lg" />
+					</div>
+
+					<div class="pair">
+						<label for="mensaje" class="font-regular font-medium">Mensaje:</label>
+						<textarea id="mensaje" type="text" name="mensaje" placeholder="Mensaje de Email"
+							class="border border-gray-300 px-3 py-2 rounded-lg h-36"></textarea>
+					</div>
+
+					<div id="botones" class="flex gap-5">
+						<button type="submit" class="text-white flex justify-center gap-2 items-center" disabled>
+							<!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+								stroke="currentColor" class="w-6 h-6">
+								<path stroke-linecap="round" stroke-linejoin="round"
+									d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" />
+							</svg> -->
+							Enviar
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</main>
+
+	<div id="carouselExample"></div>
+
+	<footer id="footer"></footer>
+
+	<script src="../js/main.js"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+@import './variables';
+@import './functions';
+@import './mixins';
+
+.envios {
+	background-image: url('../../img/envios.png') !important;
+	background-size: cover;
+	background-position: center;
+	height: calc(100vh - 108.25px);
+	display: flex;
+	align-items: center;
+}
+@include display-medium {
+	.envios {
+		height: calc(100vh - 123.25px);
+	}
+}
+
+.envios__content {
+	h2 {
+		margin: 40px 0 !important;
+		color: $color-azul !important;
+	}
+
+	h3 {
+		font-size: 24px !important;
+		margin: 30px 0 10px 0 !important;
+		color: $color-azul !important;
+	}
+	li {
+		font-family: $fuente-secundaria;
+		color: $color-gris1;
+		font-size: 18px;
+	}
+}

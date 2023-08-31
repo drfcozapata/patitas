@@ -1,0 +1,255 @@
+@import './functions';
+@import './variables';
+@import './mixins';
+
+header {
+	// Contacto y Carrito
+	.header__contact {
+		display: flex;
+		justify-content: space-between;
+		padding: em(12px) em(12px) em(10px) em(15px);
+
+		@include display-medium {
+			.header__contact {
+				padding: em(12px) em(10px) em(10px) em(27px);
+			}
+		}
+
+		&-right {
+			display: flex;
+			align-items: center;
+			gap: em(50px);
+		}
+		&-icons {
+			display: flex;
+			align-items: center;
+			gap: em(10px);
+
+			a {
+				display: inline-block;
+				color: $color-azul;
+				font-size: em(12px);
+
+				.img1,
+				.img2 {
+					display: inline-block;
+					margin-right: em(8px);
+					width: em(28px);
+					height: em(28px);
+				}
+				.img3 {
+					display: inline-block;
+					width: em(46px);
+					height: em(32px);
+				}
+			}
+		}
+	}
+
+	hr {
+		background-color: $hr-color1;
+		margin: 0;
+	}
+
+	// NavBar
+	.navbar__container {
+		&-nav {
+			padding: 5px 0;
+
+			.patitas-logo {
+				font-size: em(30px);
+				color: $color-fucsia1 !important;
+				font-weight: 700;
+			}
+			@include display-medium {
+				.patitas-logo {
+					font-size: em(40px);
+				}
+			}
+
+			.navbar-toggler {
+				background-color: $color-menu;
+
+				&-icon {
+					color: #fff;
+				}
+			}
+
+			div {
+				.navbar-nav {
+					li {
+						.nav-link {
+							font-family: $fuente-secundaria;
+							color: $color-gris1;
+							text-transform: uppercase;
+							text-align: center;
+
+							&:hover {
+								color: #000;
+							}
+						}
+					}
+				}
+
+				form {
+					.input-group {
+						position: relative;
+
+						input {
+							height: em(38px);
+							border: em(1px) solid #000;
+							border-radius: em(13px) !important;
+							padding: 0 em(10px);
+							font-size: em(13px);
+						}
+
+						button {
+							position: absolute;
+							right: em(25px);
+							top: em(1px);
+							z-index: 10;
+							height: em(35px);
+							width: em(35px);
+
+							img {
+								height: em(30px);
+								width: em(30px);
+							}
+						}
+					}
+				}
+
+				@include display-medium {
+					.avatar-div {
+						margin-right: 10px;
+					}
+				}
+			}
+		}
+		@include display-medium {
+			&-nav {
+				padding: 5px 15px 5px 0;
+			}
+		}
+	}
+}
+
+main {
+	.hero {
+		background-image: linear-gradient(
+				rgba(255, 255, 255, 0.722),
+				rgba(255, 255, 255, 0.196)
+			),
+			url('../../img/img-hero.png') !important;
+		background-size: cover;
+		background-position: center center;
+		height: calc(100vh - 123.25px);
+		display: flex;
+		align-items: center;
+
+		.hero-title {
+			font-size: 48px;
+			font-weight: bold;
+			margin-bottom: 20px;
+			color: $color-azul;
+		}
+		.hero-subtitle {
+			font-size: 24px;
+			font-weight: normal;
+			color: $color-gris1;
+			margin-top: 5px;
+			line-height: 1.2;
+		}
+		.btn__hero {
+			margin-top: 20px;
+			background-color: $color-fucsia1;
+			border: 5px solid $color-fucsia1;
+			padding: 8px 26px;
+			border-radius: 6px;
+			color: white;
+			font-size: 16px;
+			font-weight: 600;
+
+			&:hover {
+				border-color: $color-fucsia2;
+				background-color: $color-fucsia2;
+			}
+		}
+	}
+
+	.about__text {
+		h2 {
+			color: $color-azul;
+			margin-top: 0;
+		}
+		p {
+			color: $color-gris1;
+			font-family: $fuente-secundaria;
+			font-size: 18px;
+		}
+	}
+}
+
+footer {
+	background-color: #5d5a88;
+
+	.footer__menu {
+		padding-left: 65px;
+
+		li {
+			margin-bottom: 6px;
+
+			a {
+				&:hover {
+					color: $color-fucsia1 !important;
+				}
+			}
+		}
+
+		&-redes {
+			.iconos-redes {
+				display: flex;
+				gap: 12px;
+				align-items: flex-start;
+
+				.svg-img {
+					width: 24px;
+					height: 24px;
+				}
+				p {
+					font-family: $fuente-principal;
+				}
+			}
+		}
+	}
+	@include display-medium {
+		.footer__menu {
+			padding-left: 0;
+		}
+		.footer__menu-redes {
+			padding-left: 60px;
+		}
+	}
+
+	hr {
+		background-color: $hr-color2;
+	}
+
+	.footer__pagos {
+		h3 {
+			font-weight: 700;
+		}
+		img {
+			margin: 0 auto;
+			width: 100%;
+			height: auto;
+		}
+		@include display-medium {
+			img {
+				margin: 0 auto;
+				width: 50%;
+				height: auto;
+			}
+		}
+	}
+}

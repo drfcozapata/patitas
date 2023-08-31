@@ -1,0 +1,103 @@
+@import './variables';
+@import './functions';
+@import './mixins';
+
+.contacto {
+	background-image: url('../../img/contacto.png') !important;
+	background-size: cover;
+	background-position: center;
+	height: calc(100vh - 108.25px);
+	display: flex;
+	align-items: center;
+}
+@include display-medium {
+	.contacto {
+		height: calc(100vh - 123.25px);
+	}
+}
+
+.contacto__content {
+	h2 {
+		margin: 40px 0 !important;
+		color: $color-azul !important;
+	}
+
+	.contact {
+		padding: 15px;
+		background-color: $color-gris2;
+
+		#formulario {
+			background-color: white;
+			padding: 25px 15px;
+
+			.pair {
+				display: flex;
+				flex-direction: column;
+
+				label {
+					margin-top: 14px;
+					font-size: 16px;
+					font-weight: 600;
+				}
+				input {
+					height: 45px;
+					border: 1px solid #737373 !important;
+					border-radius: 8px !important;
+				}
+				textarea {
+					height: 150px;
+					border: 1px solid #737373 !important;
+					border-radius: 8px !important;
+				}
+			}
+			button {
+				margin-top: 25px;
+				width: 60% !important;
+				background-color: #ff3f8f !important;
+				font-weight: 700;
+				padding: 17px 23px;
+				font-size: 20px;
+				font-weight: 700;
+				letter-spacing: 2px;
+				text-transform: uppercase;
+				border: none;
+				box-shadow: none;
+
+				&:hover {
+					background-color: #ff75ae !important;
+					color: black !important;
+				}
+			}
+		}
+		@include display-medium {
+			#formulario {
+				padding: 25px 28px;
+
+				.pair {
+					padding: 0 30px;
+
+					label {
+						margin-top: 18px;
+						font-size: 18px;
+					}
+					input {
+						height: 53px;
+					}
+					textarea {
+						height: 184px !important;
+					}
+				}
+				button {
+					padding: 23px;
+					width: 40% !important;
+					margin-left: 30px;
+				}
+			}
+		}
+	}
+	@include display-medium {
+		.contact {
+			padding: 40px;
+		}
+	}
+}

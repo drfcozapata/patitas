@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="title" content="Patitas" />
+	<meta name="author" content="Adelys Orta" />
+	<meta name="subject" content="Tienda Online para Gatos" />
+	<meta name="description" content="Una tienda online de mascotas familiares, creada por amantes de los michis." />
+	<meta name="keywords" content="gatos, tienda, peluquería, spa, guardería" />
+	<meta name="generator" content="VScode" />
+	<meta name="language" content="Spanish" />
+	<meta name="revisit" content="1 day" />
+	<meta name="distribution" content="Global" />
+	<meta name="robots" content="All" />
+	<link rel="icon" type="image/png" href="./img/patitas.png">
+	<title>Patitas</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/css/styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&family=Source+Sans+3:wght@400;500;600;700&display=swap"
+		rel="stylesheet">
+</head>
+
+<body>
+	<!-- <div id="header-container"></div> -->
+	<!-- Menú -->
+	<header>
+		<!-- Contacto y Carrito -->
+		<div class="container header__contact">
+			<div class="header__contact-right">
+				<div class="header__contact-icons">
+					<a href="mailto:patitas@gmail.com"><img class="img1" src="./img/envelope.svg"> patitas@gmail.com</a>
+				</div>
+				<div class="header__contact-icons d-none d-md-block">
+					<a href="tel:+64 46543664"><img class="img2" src="./img/phone-call.svg"> +64 46543664</a>
+				</div>
+			</div>
+			<div class="header__contact-left">
+				<div class="header__contact-icons">
+					<a href="#">Carrito de compras <img class="img3" src="./img/carrito.png"></a>
+				</div>
+			</div>
+		</div>
+
+		<hr>
+
+		<!-- NavBar -->
+		<div class="container navbar__container">
+			<nav class="navbar navbar-expand-md navbar-dark d-flex align-items-center navbar__container-nav">
+				<!-- Logo de la empresa a la izquierda -->
+				<a class="navbar-brand mr-auto patitas-logo" href="./index.html">Patitas</a>
+
+				<!-- Botón para mostrar el menú hamburguesa en dispositivos móviles -->
+				<button class="navbar-toggler text-white" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<!-- Menú a la derecha -->
+				<div class="collapse navbar-collapse" id="navbarCollapse">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a class="nav-link text-secondary" href="./index.html">Inicio</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-secondary" href="./paginas/tienda.html">Productos</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-secondary" href="./paginas/servicios.html">Servicios</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-secondary" href="./paginas/envios.html">Envios</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-secondary" href="./paginas/contacto.html">Contacto</a>
+						</li>
+					</ul>
+
+					<!-- Barra de Búsqueda con Icono de Lupa -->
+					<form class="form-inline my-2 mx-5 ">
+						<div class="input-group">
+							<input class="form-control rounded-sm" type="search" id="search-input" placeholder="Buscar..." />
+							<label class="form-label sr-only rounded-sm" for="search-input">Search</label>
+							<button class="btn text-dark rounded-sm" id="search-button" type="submit" aria-label="Buscar">
+								<img src="./img/search.svg" alt="">
+							</button>
+						</div>
+					</form>
+					<div class="row justify-content-center">
+						<div class="avatar rounded-circle d-flex align-items-center justify-content-center"
+							style="width: 38px; height: 38px;">
+							<img
+								src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+								alt="Avatar de Usuario" class="img-fluid rounded-circle"
+								style="width: 100%; height: 100%; object-fit: cover;">
+						</div>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<!-- Hero con Bootstrap -->
+		<div class="hero">
+			<div class="container text-left">
+				<h1 class="hero-title color-azul">Tienda para Gatos</h1>
+				<p class="hero-subtitle color-gris">Encuentra los mejores productos</br>
+					para consentir a tu gato</p>
+				<div class=" mt-4">
+					<a href="./paginas/tienda.html">
+						<button type="button" class="btn btn__hero">Comprar
+							Ahora</button>
+					</a>
+				</div>
+			</div>
+
+		</div>
+
+		<!-- ¿Quiénes Somos? -->
+		<div class="container seccion mt-5 mb-5 pt-5">
+			<div class="row gap-3 mt-4">
+				<!-- Columna para la imagen -->
+				<div class="col-md-4 mb-5">
+					<img src="./img/sobreNosotros-heto.png">
+				</div>
+				<!-- Columna para el texto -->
+				<div class="col-md-8 about__text">
+					<h2 class="mb-4 font-weight-bold color-azul">¿Quiénes Somos?</h2>
+					<p>Patitas es una tienda de mascotas familiar, creada por amantes de los michis que desde hace tiempo están
+						ligados al mundo de ellos a través de fundaciones, labores de rescate, funcionando como hogares temporal y
+						participando en jornadas de adopción.</p>
+					<p>Dentro de nuestros servicios, contamos con un moderno sistema de peluquería de primer nivel, que funciona
+						en nuestra tienda de lunes a domingo, en modalidad abierta al público (toda persona que ingresa a la tienda
+						puede ver la peluquería y mirar lo que se le está haciendo a los gatitos, e inclusive los amo/as pueden
+						quedarse y participar del proceso), y un completo servicio de veterinaria en las tiendas y a domicilio. </p>
+					<p> Constantemente estamos incorporando nuevos productos y marcas en pro de las necesidades de nuestros
+						consentidos.</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- Slider Productos Más Vendidos -->
+		<div class="container my-5 py-5">
+			<div id="carouselExample" class="carousel slide" data-ride="carousel">
+				<!-- Indicadores -->
+				<ol class="carousel-indicators">
+					<li data-target="#carouselExample" data-slide-to="0" class="active"></li>
+					<li data-target="#carouselExample" data-slide-to="1"></li>
+					<li data-target="#carouselExample" data-slide-to="2"></li>
+					<li data-target="#carouselExample" data-slide-to="3"></li>
+				</ol>
+				<!-- Slides -->
+				<h2 class="color-azul my-5 text-center">Productos más vendidos</h2>
+				<div id="carouselExample" class="carousel-inner">
+					<div class="carousel-item active">
+						<div class="row">
+							<!-- Producto 1 -->
+							<div class="col-md-3 mb-4">
+								<div class="card">
+									<img src="./img/producto-1.png" alt="Producto 1" class="card-img-top">
+									<div class="card-body text-center">
+										<h3 class="card-title">Arena Leo 17 Kg</h3>
+										<p class="card-text">Arena aglutinante</p>
+										<p>$20,000</p>
+									</div>
+								</div>
+							</div>
+							<!-- Producto 2 -->
+							<div class="col-md-3 mb-4">
+								<div class="card">
+									<img src="./img/producto-2.png" alt="Producto 1" class="card-img-top">
+									<div class="card-body text-center">
+										<h3 class="card-title">Rascador Montaña</h3>
+										<p class="card-text">Centro de entretenimiento y descanso</p>
+										<p>$27,383 $38,895 (10% off)</p>
+									</div>
+								</div>
+							</div>
+							<!-- Producto 3 -->
+							<div class="col-md-3 mb-4">
+								<div class="card">
+									<img src="./img/producto-3.png" alt="Producto 1" class="card-img-top">
+									<div class="card-body text-center">
+										<h3 class="card-title">Feliway Classic Spray 60 ml</h3>
+										<p class="card-text">Alivia y reduce el estrés</p>
+										<p>$10,000</p>
+									</div>
+								</div>
+							</div>
+							<!-- Producto 4 -->
+							<div class="col-md-3 mb-4">
+								<div class="card">
+									<img src="./img/producto-4.png" alt="Producto 1" class="card-img-top">
+									<div class="card-body text-center">
+										<h3 class="card-title">Furmaster Cepillo para Nudos</h3>
+										<p class="card-text">Cepillo básico para el cuidado del pelo</p>
+										<p>$7,383 $18,895 (17% off)</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="row">
+							<!-- Producto 5 -->
+							<div class="col-md-3 mb-4">
+								<div class="card">
+									<img src="./img/producto-2.png" alt="Producto 1" class="card-img-top">
+									<div class="card-body text-center">
+										<h3 class="card-title">Rascador Montaña</h3>
+										<p class="card-text">Centro de entretenimiento y descanso</p>
+										<p>$27,383 $38,895 (10% off)</p>
+									</div>
+								</div>
+							</div>
+							<!-- Producto 6 -->
+							<div class="col-md-3 mb-4">
+								<div class="card">
+									<img src="./img/producto-4.png" alt="Producto 1" class="card-img-top">
+									<div class="card-body text-center">
+										<h3 class="card-title">Furmaster Cepillo para Nudos</h3>
+										<p class="card-text">Cepillo básico para el cuidado del pelo</p>
+										<p>$7,383 $18,895 (17% off)</p>
+									</div>
+								</div>
+							</div>
+							<!-- Producto 7 -->
+							<div class="col-md-3 mb-4">
+								<div class="card">
+									<img src="./img/producto-1.png" alt="Producto 1" class="card-img-top">
+									<div class="card-body text-center">
+										<h3 class="card-title">Arena Leo 17 Kg</h3>
+										<p class="card-text">Arena aglutinante</p>
+										<p>$20,000</p>
+									</div>
+								</div>
+							</div>
+							<!-- Producto 8 -->
+							<div class="col-md-3 mb-4">
+								<div class="card">
+									<img src="./img/producto-3.png" alt="Producto 1" class="card-img-top">
+									<div class="card-body text-center">
+										<h3 class="card-title">Feliway Classic Spray 60 ml</h3>
+										<p class="card-text">Alivia y reduce el estrés</p>
+										<p>$10,000</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Controles -->
+				<a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Anterior</span>
+				</a>
+				<a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Siguiente</span>
+				</a>
+			</div>
+		</div>
+
+		<!-- Slide Favoritos de Invierno -->
+		<div class="container my-5 py-5">
+			<div id="carouselExample2" class="carousel slide" data-ride="carousel">
+				<!-- Indicadores -->
+				<ol class="carousel-indicators">
+					<li data-target="#carouselExample2" data-slide-to="0" class="active"></li>
+					<li data-target="#carouselExample2" data-slide-to="4"></li>
+					<li data-target="#carouselExample2" data-slide-to="5"></li>
+					<li data-target="#carouselExample2" data-slide-to="6"></li>
+				</ol>
+				<!-- Slides 2-->
+				<h2 class="mb-5 color-azul text-center">Favoritos de Invierno</h2>
+				<div id="carouselExample2" class="carousel-inner">
+					<div class="carousel-item active">
+						<div class="row">
+							<!-- Producto 1 -->
+							<div class="col-md-3 mb-4 ">
+								<div class="card">
+									<img src="./img/producto-8.png" alt="Producto 1" class="card-img-top">
+									<div class="card-body text-center">
+										<h3 class="card-title">Inaba Churu Sabor Atún</h3>
+										<p class="card-text">Paté sabor atún</p>
+										<p>$2,490</p>
+									</div>
+								</div>
+							</div>
+							<!-- Producto 2 -->
+							<div class="col-md-3 mb-4">
+								<div class="card">
+									<img src="./img/producto-7.png" alt="Producto 1" class="card-img-top">
+									<div class="card-body text-center">
+										<h3 class="card-title">Espuma limpiadora de Patas para Gatos</h3>
+										<p class="card-text">Humecta y cuida sus hermosas patitas</p>
+										<p>$27,383 $38,895 (10% off)</p>
+									</div>
+								</div>
+							</div>
+							<!-- Producto 3 -->
+							<div class="col-md-3 mb-4">
+								<div class="card">
+									<img src="./img/producto-6.png" alt="Producto 1" class="card-img-top">
+									<div class="card-body text-center">
+										<h3 class="card-title">Frazada Corderito 75cm x 75cm</h3>
+										<p class="card-text">Ideal durante el invierno y las bajas temperaturas</p>
+										<p>$10,000</p>
+									</div>
+								</div>
+							</div>
+							<!-- Producto 4 -->
+							<div class="col-md-3 mb-4">
+								<div class="card">
+									<img src="./img/producto-5.png" alt="Producto 1" class="card-img-top">
+									<div class="card-body text-center">
+										<h3 class="card-title">Body Post Quirúrgico para Gato color Verde</h3>
+										<p class="card-text">Ropa de Protección y Postquirúrgica exclusiva</p>
+										<p>$13.932 $16.990 (18% off)</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="row">
+							<!-- Producto 5 -->
+							<div class="col-md-3 mb-4">
+								<div class="card">
+									<img src="./img/producto-7.png" alt="Producto 1" class="card-img-top">
+									<div class="card-body text-center">
+										<h3 class="card-title">Espuma limpiadora de Patas para Gatos</h3>
+										<p class="card-text">Humecta y cuida sus hermosas patitas</p>
+										<p>$27,383 $38,895 (10% off)</p>
+									</div>
+								</div>
+							</div>
+							<!-- Producto 6 -->
+							<div class="col-md-3 mb-4">
+								<div class="card">
+									<img src="./img/producto-5.png" alt="Producto 1" class="card-img-top">
+									<div class="card-body text-center">
+										<h3 class="card-title">Body Post Quirúrgico para Gato color Verde</h3>
+										<p class="card-text">Ropa de Protección y Postquirúrgica exclusiva</p>
+										<p>$13.932 $16.990 (18% off)</p>
+									</div>
+								</div>
+							</div>
+							<!-- Producto 7 -->
+							<div class="col-md-3 mb-4 ">
+								<div class="card">
+									<img src="./img/producto-8.png" alt="Producto 1" class="card-img-top">
+									<div class="card-body text-center">
+										<h3 class="card-title">Inaba Churu Sabor Atún</h3>
+										<p class="card-text">Paté sabor atún</p>
+										<p>$2,490</p>
+									</div>
+								</div>
+							</div>
+							<!-- Producto 8 -->
+							<div class="col-md-3 mb-4">
+								<div class="card">
+									<img src="./img/producto-6.png" alt="Producto 1" class="card-img-top">
+									<div class="card-body text-center">
+										<h3 class="card-title">Frazada Corderito 75cm x 75cm</h3>
+										<p class="card-text">Ideal durante el invierno y las bajas temperaturas</p>
+										<p>$10,000</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Controles -->
+				<a class="carousel-control-prev" href="#carouselExample2" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Anterior</span>
+				</a>
+				<a class="carousel-control-next" href="#carouselExample2" role="button" data-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Siguiente</span>
+				</a>
+			</div>
+		</div>
+	</main>
+
+	<!-- Footer -->
+	<footer class="text-white py-5">
+		<div class="container pl-5 pl-md-0">
+			<div class="row footer__menu">
+				<!-- Columna 1 -->
+				<div class="col-md-3">
+					<h3 class="text-white font-weight-bold mt-4 mb-4 mb-md-5">Productos</h3>
+					<ul class="list-unstyled">
+						<li><a class="text-white" href="#">Promociones</a></li>
+						<li><a class="text-white" href="#">Más vendidos</a></li>
+					</ul>
+				</div>
+				<!-- Columna 2 -->
+				<div class="col-md-3">
+					<h3 class="text-white font-weight-bold mt-4 mb-4 mb-md-5">Compañia</h3>
+					<ul class="list-unstyled">
+						<li><a class="text-white" href="#">Sobre Nosotros</a></li>
+						<li><a class="text-white" href="#">Contacto</a></li>
+						<li><a class="text-white" href="#">Opiniones de clientes</a></li>
+					</ul>
+				</div>
+				<!-- Columna 3 -->
+				<div class="col-md-3">
+					<h3 class="text-white font-weight-bold mt-4 mb-4 mb-md-5">Soporte</h3>
+					<ul class="list-unstyled">
+						<li><a class="text-white" href="#">Seguimiento de pedido</a></li>
+						<li><a class="text-white" href="#">Términos y condiciones</a></li>
+						<li><a class="text-white" href="#">Cambios y devoluciones</a></li>
+						<li><a class="text-white" href="#">Chat con un ejecutivo</a></li>
+						<li><a class="text-white" href="#">Formas de pago</a></li>
+					</ul>
+				</div>
+				<!-- Columna 4 -->
+				<div class="col-md-3 footer__menu-redes">
+					<h3 class="text-white font-weight-bold mt-4 mb-4 mb-md-5">Síguenos</h4>
+						<ul class="list-unstyled">
+							<li>
+								<a class="text-white" href="#">
+									<div class="iconos-redes">
+										<img src="./img/facebook.svg" class="svg-img">
+										<p>Facebook</p>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a class="text-white" href="#">
+									<div class="iconos-redes">
+										<img src="./img/twitter.svg" class="svg-img">
+										<p>Twitter</p>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a class="text-white" href="#">
+									<div class="iconos-redes">
+										<img src="./img/instagram.svg" class="svg-img">
+										<p>Instagram</p>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a class="text-white" href="#">
+									<div class="iconos-redes">
+										<img src="./img/linkedin.svg" class="svg-img">
+										<p>LinkedIn</p>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a class="text-white" href="#">
+									<div class="iconos-redes">
+										<img src="./img/youtube.svg" class="svg-img">
+										<p>Youtube</p>
+									</div>
+								</a>
+							</li>
+						</ul>
+				</div>
+			</div>
+
+			<hr class="mt-5 mb-3">
+
+			<!-- Métodos de Pago -->
+			<div class="footer__pagos">
+				<h3 class="mt-5">Métodos de pago</h3>
+				<img src="./img/seguridad.png" alt="">
+			</div>
+		</div>
+	</footer>
+
+	<script src="main.js"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

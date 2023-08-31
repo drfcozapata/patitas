@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="title" content="Patitas" />
+  <meta name="author" content="Adelys Orta" />
+  <meta name="subject" content="Tienda Online para Gatos" />
+  <meta name="description" content="Una tienda online de mascotas familiares, creada por amantes de los michis." />
+  <meta name="keywords" content="gatos, tienda, peluquería, spa, guardería" />
+  <meta name="generator" content="VScode" />
+  <meta name="language" content="Spanish" />
+  <meta name="revisit" content="1 day" />
+  <meta name="distribution" content="Global" />
+  <meta name="robots" content="All" />
+  <link rel="icon" type="image/png" href="../img/patitas.png">
+  <title>Patitas | Tienda</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="../css/css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&family=Source+Sans+3:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div id="header-container"></div>
+
+  <div class="container my-4 mb-4 productos__content">
+    <div class="row m-30">
+      <div class="d-none d-md-block col-md-3 filtros-container">
+        <!-- Miga de pan -->
+        <nav aria-label="breadcrumb m-30 background-transparente">
+          <ol class="breadcrumb background-transparente">
+            <li class="breadcrumb-item">
+              <a href="../index.html" style="color: rgb(100, 100, 100) !important;">Inicio</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">Productos </li>
+          </ol>
+        </nav>
+
+        <!-- Filtros -->
+        <h3>Ordena por</h3>
+        <div class="my-4 container filtros__content">
+          <div class="accordion" id="categoriesAccordion">
+            <!-- Categoría 1 -->
+            <div id="headinguno">
+              <h5 class="mb-0">
+                <button class="btn btn-link filtros" data-toggle="collapse" data-target="#collapseuno"
+                  aria-expanded="true" aria-controls="collapseuno">
+                  <i class="fas fa-plus"></i> Género
+                </button>
+              </h5>
+            </div>
+            <div id="collapseuno" class="collapse show" aria-labelledby="headinguno" data-parent="#categoriesAccordion">
+              <div class="card-body">
+                <label>
+                  <input class="ml-4" type="checkbox" name="opcion" value="opcion1">
+                  Macho (100)
+                </label>
+                <label>
+                  <input class="ml-4" type="checkbox" name="opcion" value="opcion1">
+                  Hembra (100)
+                </label>
+              </div>
+            </div>
+            <!-- Categoría 2 -->
+            <div class="filtros__content-title" id="headingdos">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed filtros" data-toggle="collapse" data-target="#collapsedos"
+                  aria-expanded="false" aria-controls="collapsedos">
+                  <i class="fas fa-plus"></i> Categoría
+                </button>
+              </h5>
+            </div>
+            <div id="collapsedos" class="collapse" aria-labelledby="headingdos" data-parent="#categoriesAccordion">
+              <div class="card-body">
+                <label>
+                  <input class="ml-4" type="checkbox" name="opcion" value="opcion1">
+                  Alimentos secos (27)
+                </label>
+                <label>
+                  <input class="ml-4" type="checkbox" name="opcion" value="opcion1">
+                  Juguetes (9)
+                </label>
+                <label>
+                  <input class="ml-4" type="checkbox" name="opcion" value="opcion1">
+                  Arenas Sanitarias (21)
+                </label>
+                <label>
+                  <input class="ml-4" type="checkbox" name="opcion" value="opcion1">
+                  Cepillos (11) </label>
+                <label>
+                  <input class="ml-4" type="checkbox" name="opcion" value="opcion1">
+                  Comederos (2) </label>
+              </div>
+            </div>
+            <!-- Categoría 3 -->
+            <div class="filtros__content-title" id="headingtres">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed filtros" data-toggle="collapse" data-target="#collapsetres"
+                  aria-expanded="false" aria-controls="collapsetres">
+                  <i class="fas fa-plus"></i> Precio
+                </button>
+              </h5>
+            </div>
+            <div id="collapsetres" class="collapse" aria-labelledby="headingtres" data-parent="#categoriesAccordion">
+              <div class="card-body">
+                <label>
+                  <input class="ml-4" type="checkbox" name="opcion" value="opcion1">
+                  200
+                </label>
+                <label>
+                  <input class="ml-4" type="checkbox" name="opcion" value="opcion1">
+                  300
+                </label>
+              </div>
+            </div>
+            <!-- Categoría 4 -->
+            <div class="filtros__content-title" id="headingcuatro">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed filtros" data-toggle="collapse" data-target="#collapsecuatro"
+                  aria-expanded="false" aria-controls="collapsecuatro">
+                  <i class="fas fa-plus"></i> Marcas
+                </button>
+              </h5>
+            </div>
+            <div id="collapsecuatro" class="collapse" aria-labelledby="headingcuatro"
+              data-parent="#categoriesAccordion">
+              <div class="card-body">
+                <label>
+                  <input class="ml-4" type="checkbox" name="opcion" value="opcion1">
+                  Marca 1
+                </label>
+                <label>
+                  <input class="ml-4" type="checkbox" name="opcion" value="opcion1">
+                  Marca 2
+                </label>
+              </div>
+            </div>
+            <!-- Categoría 5 -->
+            <div class="filtros__content-title" id="headingcinco">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed filtros" data-toggle="collapse" data-target="#collapsecinco"
+                  aria-expanded="false" aria-controls="collapsecinco">
+                  <i class="fas fa-plus"></i> Edad
+                </button>
+              </h5>
+            </div>
+            <div id="collapsecinco" class="collapse" aria-labelledby="headingcinco" data-parent="#categoriesAccordion">
+              <div class="card-body">
+                <label>
+                  <input class="ml-4" type="checkbox" name="opcion" value="opcion1">
+                  18 - 30
+                </label>
+                <label>
+                  <input class="ml-4" type="checkbox" name="opcion" value="opcion1">
+                  30 - +100
+                </label>
+              </div>
+            </div>
+            <!-- Categoría 6 -->
+            <div class="filtros__content-title" id="headingseis">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed filtros" data-toggle="collapse" data-target="#collapseseis"
+                  aria-expanded="false" aria-controls="collapseseis">
+                  <i class="fas fa-plus"></i> Descuentos
+                </button>
+              </h5>
+            </div>
+            <div id="collapseseis" class="collapse" aria-labelledby="headingseis" data-parent="#categoriesAccordion">
+              <div class="card-body">
+                <label>
+                  <input class="ml-4" type="checkbox" name="opcion" value="opcion1">
+                  15%
+                </label>
+                <label>
+                  <input class="ml-4" type="checkbox" name="opcion" value="opcion1">
+                  30%
+                </label>
+              </div>
+            </div>
+            <!-- Categoría 7 -->
+            <div class="filtros__content-title" id="headingsiete">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed filtros" data-toggle="collapse" data-target="#collapsesiete"
+                  aria-expanded="false" aria-controls="collapsesiete">
+                  <i class="fas fa-plus"></i> Colores
+                </button>
+              </h5>
+            </div>
+            <div id="collapsesiete" class="collapse" aria-labelledby="headingsiete" data-parent="#categoriesAccordion">
+              <div class="card-body">
+                <label>
+                  <input class="ml-4" type="checkbox" name="opcion" value="opcion1">
+                  Rojo
+                </label>
+                <label>
+                  <input class="ml-4" type="checkbox" name="opcion" value="opcion1">
+                  Verde
+                </label>
+              </div>
+            </div>
+            <!-- Categoría 8 -->
+            <div class="filtros__content-title" id="headingocho">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed filtros" data-toggle="collapse" data-target="#collapseocho"
+                  aria-expanded="false" aria-controls="collapseocho">
+                  <i class="fas fa-plus"></i> Tallas
+                </button>
+              </h5>
+            </div>
+            <div id="collapseocho" class="collapse" aria-labelledby="headingocho" data-parent="#categoriesAccordion">
+              <div class="card-body">
+                <label>
+                  <input class="ml-4" type="checkbox" name="opcion" value="opcion1">
+                  S
+                </label>
+                <label>
+                  <input class="ml-4" type="checkbox" name="opcion" value="opcion1">
+                  M
+                </label>
+              </div>
+            </div>
+            <!-- Más filtros -->
+            <div class="filtros__content-title2" id="headingocho">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed filtros" data-toggle="collapse" data-target="#collapseocho"
+                  aria-expanded="false" aria-controls="collapseocho">
+                  Más filtros
+                </button>
+              </h5>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Productos -->
+      <div class="col-md-9 px-0">
+        <h2 class="text-center">Productos</h2>
+
+        <!-- Barra superior productos encontrados -->
+        <div class="productos">
+          <p class="productos-encontrados mt-1">200 Productos encontrados</p>
+          <div class="d-none d-md-flex align-items-center gap-3">
+            <p class="productos-grid">Grid</p>
+            <div class="d-flex mt-n2">
+              <svg width="37" height="23" viewBox="0 0 37 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="4.86914" y="4" width="6.82182" height="15" fill="#878787" />
+                <rect x="14.6143" y="4" width="6.82182" height="15" fill="#878787" />
+                <rect x="24.3594" y="4" width="6.82182" height="15" fill="#878787" />
+                <rect x="1.4707" y="0.5" width="34.0836" height="22" stroke="black" />
+              </svg>
+              <svg width="55" height="23" viewBox="0 0 55 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0.580078" y="0.5" width="53.5745" height="22" stroke="#837F7F" />
+                <rect x="3.97754" y="4" width="6.82182" height="15" fill="#878787" />
+                <rect x="13.7236" y="4" width="6.82182" height="15" fill="#878787" />
+                <rect x="23.4688" y="4" width="6.82182" height="15" fill="#878787" />
+                <rect x="33.2139" y="4" width="6.82182" height="15" fill="#878787" />
+                <rect x="42.96" y="4" width="6.82182" height="15" fill="#878787" />
+              </svg>
+            </div>
+          </div>
+          <div class="d-flex align-items-center">
+            <p class="productos-ordenar mt-1">Ordenar por</p>
+            <form>
+              <Select class="select-product">
+                <Option>Relevancia</Option>
+                <Option>Categoría</Option>
+                <Option>Más vendidos</Option>
+                <Option>Más recientes</Option>
+              </Select>
+            </form>
+          </div>
+        </div>
+
+        <!-- Tarjetas de productos -->
+        <div class="row cards">
+          <div class="flex-productos">
+            <!-- Producto 1 -->
+            <div class="col-md-4 tienda__producto">
+              <div class="card">
+                <img src="/img/producto-9.png" alt="Producto 1" class="card-img-top">
+                <div class="card-body text-center">
+                  <h3 class="card-title"
+                    style="font-size: 18px !important; font-weight: 500; line-height: 1.1; margin-bottom: 10px;">Purina
+                    Pro Plan Gatitos 1Kg</h3>
+                  <p class="card-text">Gatitos en crecimiento hasta 12 meses</p>
+                  <p>$10,900</p>
+                </div>
+              </div>
+            </div>
+            <!-- Producto 2 -->
+            <div class="col-md-4 tienda__producto">
+              <div class="card">
+                <img src="/img/producto-10.png" alt="Producto 1" class="card-img-top">
+                <div class="card-body text-center">
+                  <h3 class="card-title"
+                    style="font-size: 18px !important; font-weight: 500; line-height: 1.1; margin-bottom: 10px;">Pro
+                    Plan Reduce Calorias 3Kg</h3>
+                  <p class="card-text">Ideal para gatos poco activos o con exceso de peso
+                  </p>
+                  <p>$27,990 $38,990 (10% off)</p>
+                </div>
+              </div>
+            </div>
+            <!-- Producto 3 -->
+            <div class="col-md-4 tienda__producto">
+              <div class="card">
+                <img src="/img/producto-11.png" alt="Producto 1" class="card-img-top">
+                <div class="card-body text-center">
+                  <h3 class="card-title"
+                    style="font-size: 18px !important; font-weight: 500; line-height: 1.1; margin-bottom: 10px;">Purina
+                    Pro Plan LiveClear 3Kg</h3>
+                  <p class="card-text">Reduce alérgenos en el pelo y la caspa</p>
+                  <p>$34,9900</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex-productos">
+            <!-- Producto 4 -->
+            <div class="col-md-4 tienda__producto">
+              <div class="card">
+                <img src="/img/producto-1.png" alt="Producto 1" class="card-img-top">
+                <div class="card-body text-center">
+                  <h3 class="card-title"
+                    style="font-size: 18px !important; font-weight: 500; line-height: 1.1; margin-bottom: 10px;">Arena
+                    Leo 17Kg</h3>
+                  <p class="card-text">Arena aglutinante con Carbón Activo</p>
+                  <p>$20,000</p>
+                </div>
+              </div>
+            </div>
+            <!-- Producto 5 -->
+            <div class="col-md-4 tienda__producto">
+              <div class="card">
+                <img src="/img/producto-13.png" alt="Producto 1" class="card-img-top">
+                <div class="card-body text-center">
+                  <h3 class="card-title"
+                    style="font-size: 18px !important; font-weight: 500; line-height: 1.1; margin-bottom: 10px;">Arena
+                    Odour Buster 14Kg
+                  </h3>
+                  <p class="card-text">Compuesta de ingredientes totalmente naturales</p>
+                  <p>$20,990</p>
+                </div>
+              </div>
+            </div>
+            <!-- Producto 6 -->
+            <div class="col-md-4 tienda__producto">
+              <div class="card">
+                <img src="/img/producto-12.png" alt="Producto 1" class="card-img-top">
+                <div class="card-body text-center">
+                  <h3 class="card-title"
+                    style="font-size: 18px !important; font-weight: 500; line-height: 1.1; margin-bottom: 10px;">Arena
+                    America Litter 7Kg
+                  </h3>
+                  <p class="card-text">Sugerida para gatos y dueños con dificultad respiratoria y alergias al polvo</p>
+                  <p>$12,990</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex-productos">
+            <!-- Producto 7 -->
+            <div class="col-md-4 tienda__producto">
+              <div class="card">
+                <img src="/img/producto-16.png" alt="Producto 1" class="card-img-top">
+                <div class="card-body text-center">
+                  <h3 class="card-title"
+                    style="font-size: 18px !important; font-weight: 500; line-height: 1.1; margin-bottom: 10px;">Churu
+                    Variedades Atún 50 tubos</h3>
+                  <p class="card-text">Conveniente pack con diversas variedades y combinaciones de atún</p>
+                  <p>$30,500</p>
+                </div>
+              </div>
+            </div>
+            <!-- Producto 8 -->
+            <div class="col-md-4 tienda__producto">
+              <div class="card">
+                <img src="/img/producto-15.png" alt="Producto 1" class="card-img-top">
+                <div class="card-body text-center">
+                  <h3 class="card-title"
+                    style="font-size: 18px !important; font-weight: 500; line-height: 1.1; margin-bottom: 10px;">
+                    Galletas de Salmón con Hierba Gatera</h3>
+                  <p class="card-text">Elaborado con productos 100% naturales</p>
+                  <p>$1,990</p>
+                </div>
+              </div>
+            </div>
+            <!-- Producto 9 -->
+            <div class="col-md-4 tienda__producto">
+              <div class="card">
+                <img src="/img/producto-14.png" alt="Producto 1" class="card-img-top">
+                <div class="card-body text-center">
+                  <h3 class="card-title"
+                    style="font-size: 18px !important; font-weight: 500; line-height: 1.1; margin-bottom: 10px;">Churu
+                    Sabor Pollo con Camarón</h3>
+                  <p class="card-text">Paté sabor pollo con camarón libre de conservantes y colorantes artificiales</p>
+                  <p>$2,490</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex-productos">
+            <!-- Producto 10 -->
+            <div class="col-md-4 tienda__producto">
+              <div class="card">
+                <img src="/img/producto-19.png" alt="Producto 1" class="card-img-top">
+                <div class="card-body text-center">
+                  <h3 class="card-title"
+                    style="font-size: 18px !important; font-weight: 500; line-height: 1.1; margin-bottom: 10px;">
+                    Rascador Patita</h3>
+                  <p class="card-text">Suave, cómodo y acogedor. Con un ratón giratorio</p>
+                  <p>$20,000</p>
+                </div>
+              </div>
+            </div>
+            <!-- Producto 11 -->
+            <div class="col-md-4 tienda__producto">
+              <div class="card">
+                <img src="/img/producto-18.png" alt="Producto 1" class="card-img-top">
+                <div class="card-body text-center">
+                  <h3 class="card-title"
+                    style="font-size: 18px !important; font-weight: 500; line-height: 1.1; margin-bottom: 10px;">
+                    Rascador Terraza</h3>
+                  <p class="card-text">2 áreas de descanso, postes para rascar y juguetes</p>
+                  <p>$28,990 $38,895 (10% off)</p>
+                </div>
+              </div>
+            </div>
+            <!-- Producto 12 -->
+            <div class="col-md-4 tienda__producto">
+              <div class="card">
+                <img src="/img/producto-17.png" alt="Producto 1" class="card-img-top">
+                <div class="card-body text-center">
+                  <h3 class="card-title"
+                    style="font-size: 18px !important; font-weight: 500; line-height: 1.1; margin-bottom: 10px;">
+                    Rascador
+                    Montaña</h3>
+                  <p class="card-text">6 niveles apto para 3 o 4 gatos</p>
+                  <p>$90,990</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer id="footer"></footer>
+
+  <script src="../js/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
